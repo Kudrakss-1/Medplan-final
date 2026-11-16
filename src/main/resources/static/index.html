@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МедПлан — медицинский центр</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">✚ МедПлан</div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#about">О нас</a>
+    </nav>
+
+    <div class="header-buttons">
+        <button class="login-btn" onclick="openLogin()">Войти</button>
+        <button onclick="openRegister()">Регистрация</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">ВАШЕ ЗДОРОВЬЕ — НАШ ПРИОРИТЕТ</span>
+            <h1>Здоровье начинается с правильной заботы</h1>
+            <p>
+                Выбирайте специалистов, записывайтесь на приём
+                и управляйте своими визитами онлайн.
+            </p>
+            <a href="#doctors" class="main-btn">Выбрать врача →</a>
+        </div>
+
+        <div class="hero-icon">✚</div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Наши возможности</h2>
+        <p class="section-subtitle">
+            Всё необходимое для удобной заботы о здоровье
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h3>Опытные врачи</h3>
+                <p>Квалифицированные специалисты готовы помочь вам.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Онлайн-запись</h3>
+                <p>Выбирайте удобную дату и время приёма.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💙</div>
+                <h3>Личный кабинет</h3>
+                <p>Следите за своими записями в одном месте.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+        <h2>Наши врачи</h2>
+        <p class="section-subtitle">
+            Специалисты нашего медицинского центра
+        </p>
+
+        <div class="cards" id="doctors-list">
+            <p>Загружаем список врачей...</p>
+        </div>
+    </section>
+<section class="services" id="booking">
+    <h2>Запись на приём</h2>
+    <p class="section-subtitle">Выберите врача и удобное время</p>
+
+    <div class="card booking-card">
+        <form id="appointment-form">
+            <label for="booking-doctor">Врач</label>
+            <select id="booking-doctor" required>
+                <option value="">Выберите врача</option>
+            </select>
+
+            <label for="booking-date">Дата приёма</label>
+            <input type="date" id="booking-date" required>
+
+            <label for="booking-time">Время приёма</label>
+            <select id="booking-time" required>
+                <option value="">Выберите время</option>
+            </select>
+
+            <button type="submit">Записаться</button>
+        </form>
+
+        <p id="appointment-message" class="message"></p>
+    </div>
+</section>
+<section class="services" id="my-appointments">
+    <h2>Мои записи</h2>
+    <div id="appointments-list"></div>
+</section>
+    <section class="about" id="about">
+        <h2>МедПлан — забота о вашем здоровье</h2>
+        <p>
+            Мы делаем медицинскую помощь доступнее и удобнее.
+            Записывайтесь к специалистам онлайн в любое время.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 МедПлан. Все права защищены.</p>
+</footer>
+
+<!-- ОКНО РЕГИСТРАЦИИ -->
+<div class="modal" id="register-modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeRegister()">✕</button>
+
+        <h2>Регистрация</h2>
+
+        <form id="register-form">
+            <input type="text" id="reg-name"
+                   placeholder="Ваше имя" required>
+
+            <input type="email" id="reg-email"
+                   placeholder="Электронная почта" required>
+
+            <input type="password" id="reg-password"
+                   placeholder="Пароль" required>
+
+            <button type="submit">Создать аккаунт</button>
+        </form>
+
+        <p id="register-message" class="message"></p>
+    </div>
+</div>
+
+
+<div class="modal" id="login-modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeLogin()">✕</button>
+
+        <h2>Вход в аккаунт</h2>
+
+        <form id="login-form">
+            <input type="email" id="login-email"
+                   placeholder="Электронная почта" required>
+
+            <input type="password" id="login-password"
+                   placeholder="Пароль" required>
+
+            <button type="submit">Войти</button>
+        </form>
+
+        <p id="login-message" class="message"></p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
