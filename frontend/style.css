@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9ff;
+    color: #26354a;
+}
+
+header {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2478c5;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #40516a;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2478c5;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button, .main-btn {
+    border: none;
+    background: #2478c5;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+button:hover, .main-btn:hover {
+    background: #155c9e;
+}
+
+.login-btn {
+    background: #e8f3ff;
+    color: #2478c5;
+}
+
+.login-btn:hover {
+    background: #d5eaff;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 90px 10%;
+    background: linear-gradient(120deg, #e0f0ff, #f5f9ff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #2478c5;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero p {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-icon {
+    font-size: 170px;
+    color: #2478c5;
+    opacity: 0.8;
+    background: white;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(36,120,197,0.12);
+}
+
+.services, .doctors {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.services h2, .doctors h2, .about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #7b899b;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(36,120,197,0.12);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #2478c5;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.about {
+    text-align: center;
+    padding: 75px 15%;
+    background: #e8f3ff;
+}
+
+.about p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+footer {
+    background: #26354a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 750px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+}
+
+

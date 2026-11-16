@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МедПлан — медицинский центр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">✚ МедПлан</div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#about">О нас</a>
+    </nav>
+
+    <div class="header-buttons">
+        <button class="login-btn" onclick="alert('Вход скоро появится!')">Войти</button>
+        <button onclick="alert('Регистрация скоро появится!')">Регистрация</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">ВАШЕ ЗДОРОВЬЕ — НАШ ПРИОРИТЕТ</span>
+            <h1>Здоровье начинается с правильной заботы</h1>
+            <p>Выбирайте специалистов, записывайтесь на приём и управляйте своими визитами онлайн.</p>
+            <a href="#doctors" class="main-btn">Выбрать врача →</a>
+        </div>
+        <div class="hero-icon">✚</div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Наши возможности</h2>
+        <p class="section-subtitle">Всё необходимое для удобной заботы о здоровье</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h3>Опытные врачи</h3>
+                <p>Квалифицированные специалисты готовы помочь вам.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Онлайн-запись</h3>
+                <p>Выбирайте удобную дату и время приёма.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💙</div>
+                <h3>Личный кабинет</h3>
+                <p>Следите за своими записями в одном месте.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+        <h2>Наши врачи</h2>
+        <p class="section-subtitle">Специалисты нашего медицинского центра</p>
+        <div class="cards" id="doctors-list">
+            <p>Загружаем список врачей...</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>МедПлан — забота о вашем здоровье</h2>
+        <p>Мы делаем медицинскую помощь доступнее и удобнее. Записывайтесь к специалистам онлайн в любое время.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 МедПлан. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
